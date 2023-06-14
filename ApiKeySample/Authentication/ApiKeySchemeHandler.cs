@@ -1,6 +1,5 @@
 ﻿using System.Security.Claims;
 using System.Text.Encodings.Web;
-using ApiKeySample.Authorization;
 using ApiKeySample.Extensions;
 using ApiKeySample.Security;
 using ApiKeySample.Services;
@@ -39,7 +38,7 @@ public class ApiKeySchemeHandler : AuthenticationHandler<ApiKeySchemeOptions>
             //This request doesn't required AUTH so pass on the ticket to the middleware
             return AuthenticateResult.Success(new AuthenticationTicket(new ClaimsPrincipal(), Scheme.Name));
         }
-        
+
         if (!Context.TryGetApiKeyFromQueryParams(out string value))
         {
             //Missing key the way we want it

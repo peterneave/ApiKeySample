@@ -2,8 +2,6 @@ using ApiKeySample.Authentication;
 using ApiKeySample.Authorization;
 using ApiKeySample.Services;
 using Microsoft.AspNetCore.Authorization;
-using Microsoft.OpenApi.Models;
-using Swashbuckle.AspNetCore.SwaggerGen;
 
 namespace ApiKeySample.Extensions;
 

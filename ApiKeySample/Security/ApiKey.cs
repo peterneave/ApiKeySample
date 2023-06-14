@@ -16,5 +16,6 @@ public class ApiKey
     public string Key { get; }
 
     public Guid CompanyId { get; }
+    
     public string[] Permissions { get; }
 }

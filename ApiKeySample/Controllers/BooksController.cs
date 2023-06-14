@@ -37,7 +37,6 @@ public class BooksController : ControllerBase
     [HttpGet]
     public IEnumerable<Book> Get()
     {
-        
         return Books.Values;
     }
 

@@ -5,8 +5,8 @@ namespace ApiKeySample.Services;
 
 internal class ApiKeyStore : IApiKeyStore
 {
-    private static Guid ReadWrite = Guid.Parse("00000000-0000-0000-0000-000000000000");
-    private static Guid ReadOnly = Guid.Parse("00000000-0000-0000-0000-000000000001");
+    private static readonly Guid ReadWrite = Guid.Parse("00000000-0000-0000-0000-000000000000");
+    private static readonly Guid ReadOnly = Guid.Parse("00000000-0000-0000-0000-000000000001");
 
     private Dictionary<string, ApiKey> _keys = new()
     {
